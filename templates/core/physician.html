@@ -1,0 +1,18 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+<div class="rows">
+        {% for physician in physicians %}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="{{ physician.image.url }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ physician.title }}</h5>
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
