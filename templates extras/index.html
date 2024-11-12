@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -8,27 +7,28 @@
     <meta name="keywords" content="Deerhost, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mental Health </title>
+    <title>DEERHOST | Template</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/ncss?family=Montserrat:400,500,600,700,800,900&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %}" type="text/css">
-    <link rel="stylesheet" href=" {% static 'css/font-awesome.min.css' %}" type="text/css">
-    <link rel="stylesheet" href=" {% static 'css/elegant-icons.css' %}" type="text/css">
-    <link rel="stylesheet" href=" {% static 'css/flaticon.css' %}" type="text/css">
-    <link rel="stylesheet" href=" {% static 'css/owl.carousel.min.css' %}" type="text/css">
-    <link rel="stylesheet" href=" {% static 'css/slicknav.min.css' %}" type="text/css">
-    <link rel="stylesheet" href=" {% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 </head>
 
 <body>
     <!-- Page Preloder -->
-<!--    <div id="preloder">-->
-<!--        <div class="loader"></div>-->
-<!--    </div>-->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
 
     <!-- Offcanvas Menu Begin -->
     <div class="offcanvas__menu__overlay"></div>
@@ -37,12 +37,12 @@
             <span class="fa fa-times-circle-o"></span>
         </div>
         <div class="offcanvas__logo">
-            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+            <a href="static/img/logo.png"><img src="img/logo.png" alt=""></a>
         </div>
         <nav class="offcanvas__menu mobile-menu">
             <ul>
-                <li class="active"><a href="core/home.html">Homee</a></li>
-                <li><a href="./about.html">about</a></li>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
                 <li><a href="./hosting.html">Hosting</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="dropdown">
@@ -59,12 +59,12 @@
         <div class="offcanvas__auth">
             <ul>
                 <li><a href="#"><span class="icon_chat_alt"></span> Live chat</a></li>
-                <li><a href="{% url 'core:login' %}"><span class="fa fa-user"></span> Login / Register</a></li>
+                <li><a href="#"><span class="fa fa-user"></span> Login / Register</a></li>
             </ul>
         </div>
         <div class="offcanvas__info">
             <ul>
-                <li><span class="icon_phone"></span> +234 706-627-4195</li>
+                <li><span class="icon_phone"></span> +1 123-456-7890</li>
                 <li><span class="fa fa-envelope"></span> Support@gmail.com</li>
             </ul>
         </div>
@@ -99,13 +99,13 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="core/home.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="core/home.html">Home</a></li>
+                            <li class="active"><a href="./index.html">Home</a></li>
                             <li><a href="./about.html">About</a></li>
                             <li><a href="./hosting.html">Hosting</a></li>
                             <li><a href="#">Pages</a>
@@ -143,13 +143,13 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="hero__img">
-                                <img src="{% static 'img/hero/hero-right.png' %}" alt="">
+                                <img src="img/hero/hero-right.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -161,7 +161,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="hero__img">
-                                <img src="{% static 'img/hero/hero-right.png' %}" alt="">
+                                <img src="img/hero/hero-right.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -297,8 +297,8 @@
                         <h3>$15.90 <span>/ month</span></h3>
                         <ul>
                             <li>2,5 GB web space</li>
-                            <li>Free site building tools</li>
-                            <li>Free domain register</li>
+                            <li>Free site buiding tools</li>
+                            <li>Free domain registar</li>
                             <li>24/7 Support</li>
                             <li>Free marketing tool</li>
                             <li>99,9% Services uptime</li>
@@ -313,8 +313,8 @@
                         <h3>$25.90 <span>/ month</span></h3>
                         <ul>
                             <li>90 GB web space</li>
-                            <li>Free site building tools</li>
-                            <li>Free domain register</li>
+                            <li>Free site buiding tools</li>
+                            <li>Free domain registar</li>
                             <li>24/7 Support</li>
                             <li>Free marketing tool</li>
                             <li>99,9% Services uptime</li>
@@ -345,8 +345,8 @@
                         <h3>$45.90 <span>/ month</span></h3>
                         <ul>
                             <li>Unlimited web space</li>
-                            <li>Free site building tools</li>
-                            <li>Free domain register</li>
+                            <li>Free site buiding tools</li>
+                            <li>Free domain registar</li>
                             <li>24/7 Support</li>
                             <li>Free marketing tool</li>
                             <li>99,9% Services uptime</li>
@@ -411,8 +411,8 @@
                         <h3>$450 <span>/ month</span></h3>
                         <ul>
                             <li>Unlimited web space</li>
-                            <li>Free site building tools</li>
-                            <li>Free domain register</li>
+                            <li>Free site buiding tools</li>
+                            <li>Free domain registar</li>
                             <li>24/7 Support</li>
                             <li>Free marketing tool</li>
                             <li>99,9% Services uptime</li>
@@ -427,7 +427,7 @@
     <!-- Pricing Section End -->
 
     <!-- Achievement Section Begin -->
-    <section class="achievement-section set-bg spad" data-setbg="{% static 'img/achievement-bg.jpg' %}">
+    <section class="achievement-section set-bg spad" data-setbg="img/achievement-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6">
@@ -508,7 +508,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <img src="{% static 'img/choose-plan.png'%} " alt="">
+                    <img src="img/choose-plan.png" alt="">
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="plan__text">
@@ -556,7 +556,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="footer__text-about">
                             <div class="footer__logo">
-                                <a href="core/home.html"><img src="img/logo.png" alt=""></a>
+                                <a href="./index.html"><img src="img/logo.png" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida viverra maecen
@@ -616,12 +616,11 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
